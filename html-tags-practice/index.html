@@ -4,113 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Tags Practice</title>
+    <title>HTML Tags Cheat Sheet</title>
 </head>
 
 <body>
-    <p>Table of Contents</p>
-    <ul>
-        <li><a href="#headings">Headings</a></li>
-        <li><a href="#paragraphs">Paragraphs</a></li>
-        <li><a href="#lists">Lists</a></li>
-        <li><a href="#anchors">Anchors</a></li>
-        <li><a href="#text-emphasis">Text emphasis</a></li>
-        <li><a href="#divspan">Divs and Spans</a></li>
-        <li><a href="#br">Line breaks</a></li>
-    </ul>
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#paragraphs">Paragraphs</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#anchors">Anchors</a></li>
+            <li><a href="#text-emphasis">Text Emphasis</a></li>
+            <li><a href="#divspan">Divs and Spans</a></li>
+            <li><a href="#br">Line Breaks</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
 
-    <h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
-    <h2 id="headings">Headings</h2>
-    <p>
-        Headings from `h1` to `h6` identify blocks and sections. Every page must have one `h1`.
-    </p>
+        <section id="headings">
+            <h2>Headings</h2>
+            <p>Headings from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> identify blocks and sections. Every page
+                must have one <code>&lt;h1&gt;</code>.</p>
+        </section>
 
-    <h2 id="paragraphs">Paragraphs</h2>
-    <p>
-        Paragraphs of text go in `p` tags.
-    </p>
+        <section id="paragraphs">
+            <h2>Paragraphs</h2>
+            <p>Paragraphs of text go in <code>&lt;p&gt;</code> tags.</p>
+        </section>
 
-    <h2 id="lists">Lists</h2>
-    <h3>Unordered Lists</h3>
-    <p>
-        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
-    </p>
-    <h4>Types of lists:</h4>
-    <ul>
-        <li>Unordered lists (`ul`)</li>
-        <li>Ordered lists (`ol`)</li>
-    </ul>
+        <section id="lists">
+            <h2>Lists</h2>
 
-    <h3>Ordered Lists</h3>
-    <p>
-        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
-    </p>
-    <h4>Polya's Problem Solving Framework</h4>
-    <ol>
-        <li>Understand the problem</li>
-        <li>Come up with a plan</li>
-        <li>Carry out the plan</li>
-        <li>Go back and improve your solution</li>
-    </ol>
+            <article>
+                <h3>Unordered Lists</h3>
+                <p>Unordered lists are marked with bullet points and go in <code>&lt;ul&gt;</code> tags. Each list item
+                    goes in an <code>&lt;li&gt;</code> tag.</p>
+                <h4>Types of lists:</h4>
+                <ul>
+                    <li>Unordered lists (<code>&lt;ul&gt;</code>)</li>
+                    <li>Ordered lists (<code>&lt;ol&gt;</code>)</li>
+                </ul>
+            </article>
 
-    <h2 id="anchors">Anchors (i.e. links)</h2>
-    <p>
-        Anchor tags create links to other pages. The URL goes in the `href` attribute.
-        <a href="https://duckduckgo.com">
-            Go to DuckDuckGo to search for more information.
-        </a>
-    </p>
-    <p>
-        Setting `target="_blank"` will open the link in a new window. See
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
-            MDN
-        </a>
-        for more details.
-    </p>
+            <article>
+                <h3>Ordered Lists</h3>
+                <p>Ordered lists are numbered and go in <code>&lt;ol&gt;</code> tags. Each list item goes in an
+                    <code>&lt;li&gt;</code> tag.
+                </p>
+                <h4>Polya's Problem Solving Framework</h4>
+                <ol>
+                    <li>Understand the problem</li>
+                    <li>Come up with a plan</li>
+                    <li>Carry out the plan</li>
+                    <li>Go back and improve your solution</li>
+                </ol>
+            </article>
+        </section>
 
-    <h2 id="text-emphasis">Text Emphasis</h2>
-    <h3>Italic</h3>
-    <em>
-        The `em` element adds extra emphasis to the text within the opening and closing tags. This shows up as italic
-        text
-        in most browsers.
-    </em>
-    <h3>Bold</h3>
-    <strong>
-        You can also use the `strong` element to emphasize text. This shows up as bold text in most browsers.
-    </strong>
+        <section id="anchors">
+            <h2>Anchors (i.e. Links)</h2>
+            <p>Anchor tags create links to other pages. The URL goes in the <code>href</code> attribute.</p>
+            <p><a href="https://duckduckgo.com">Go to DuckDuckGo to search for more information.</a></p>
+            <p>Setting <code>target="_blank"</code> will open the link in a new window. See
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MDN</a> for more
+                details.
+            </p>
+        </section>
 
-    <h2 id="divspan">Organizing Content with `div` and `span`</h2>
-    <h3>`div`</h3>
-    <p>
-        The `div` element is a block element, so each `div` will show up on a new line.
-    </p>
-    <div>1st div</div>
-    <div>2nd div</div>
-    <div>3rd div</div>
-    <h3>`span`</h3>
-    <p>
-        The `span` element is an inline element, so there will be no line break between each `span`.
-    </p>
-    <span>1st span</span>
-    <span>2nd span</span>
-    <span>3rd span</span>
+        <section id="text-emphasis">
+            <h2>Text Emphasis</h2>
+            <article>
+                <h3>Italic</h3>
+                <p><em>The <code>&lt;em&gt;</code> element adds extra emphasis to the text within the opening and
+                        closing
+                        tags. This shows up as italic text in most browsers.</em></p>
+            </article>
+            <article>
+                <h3>Bold</h3>
+                <p><strong>You can also use the <code>&lt;strong&gt;</code> element to emphasize text. This shows up as
+                        bold text in most browsers.</strong></p>
+            </article>
+        </section>
 
-    <h2 id="br">Breaking text using the `br` tag</h2>
-    <p>
-        Replace with Haiku line 1 (5 syllables)<br>
-        Replace with Haiku line 2 (7 syllables)<br>
-        Replace with Haiku line 3 (5 syllables)<br>
-    </p>
-    <p>
-        Anchor tags can also create links to a new location on the same page. Instead of putting a URL goes in the
-        "href"
-        attribute, just use the "id" of the element you want to navigate to. This allows you to
-        <a href="#top-of-page">
-            Jump to the top of the page.
-        </a>
-    </p>
+        <section id="divspan">
+            <h2>Organizing Content with <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></h2>
+
+            <article>
+                <h3><code>&lt;div&gt;</code></h3>
+                <p>The <code>&lt;div&gt;</code> element is a block element, so each <code>&lt;div&gt;</code> will show
+                    up
+                    on a new line.</p>
+                <div>1st div</div>
+                <div>2nd div</div>
+                <div>3rd div</div>
+            </article>
+
+            <article>
+                <h3><code>&lt;span&gt;</code></h3>
+                <p>The <code>&lt;span&gt;</code> element is an inline element, so there will be no line break between
+                    each
+                    <code>&lt;span&gt;</code>.
+                </p>
+                <span>1st span</span>
+                <span>2nd span</span>
+                <span>3rd span</span>
+            </article>
+        </section>
+
+        <section id="br">
+            <h2>Breaking Text Using the <code>&lt;br&gt;</code> Tag</h2>
+            <p>Replace with Haiku line 1 (5 syllables)<br> Replace with Haiku line 2 (7 syllables)<br> Replace with
+                Haiku
+                line 3 (5 syllables)<br></p>
+            <p>Anchor tags can also create links to a new location on the same page. Instead of putting a URL in the
+                <code>href</code> attribute, just use the <code>id</code> of the element you want to navigate to. This
+                allows you to <a href="#top-of-page">Jump to the top of the page.</a>
+            </p>
+        </section>
+    </main>
 </body>
 
 </html>
