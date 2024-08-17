@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building HTML Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="status">Status</label>
+            <select name="status" id="status">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+
+            <p>Choose your favorite programming language:</p>
+
+            <input type="radio" id="html" name="favLanguage" value="html">
+            <label for="html">HTML</label>
+
+            <input type="radio" id="css" name="favLanguage" value="css">
+            <label for="css">CSS</label>
+
+            <input type="radio" id="js" name="favLanguage" value="js">
+            <label for="js">JavaScript</label>
+
+            <label for="comment">Additional Information</label>
+            <textarea name="comment" id="comment"></textarea>
+
+            <label for="date">Current Date</label>
+            <input type="date" id="date" name="date">
+
+            <input type="checkbox" name="signUp" id="signUp">
+            <label for="signUp">Sign up for newsletter</label>
+
+            <input type="checkbox" name="termsAndConditions" id="termsAndConditions">
+            <label for="termsAndConditions">Agree to terms and conditions</label>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    </form>
+</body>
+
+</html>
