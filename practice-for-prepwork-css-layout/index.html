@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Practice</title>
+</head>
+
+<body>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+            <div class="inputs-container">
+                <div class="part-firstName">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div class="part-lastName">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div class="part-email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                <div class="status-date">
+                    <div class="status">
+                        <label for="role">Status</label>
+                        <select id="role" name="user_role_name">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+                <div class="languages">
+                    <p class="align-center">Choose your favorite Web language:</p>
+                    <div class="group-favLanguage">
+                        <section>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">HTML</label><br>
+                        </section>
+                        <section>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">CSS</label><br>
+                        </section>
+                        <section>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">JavaScript</label>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="part-comments">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div class="signup-terms">
+                    <section>
+                        <input type="checkbox" id="signup" name="signup" value="Signup">
+                        <label for="signup">Sign up for news letter</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="terms" name="terms" value="Terms">
+                        <label for="terms"> Agree to terms and conditions</label>
+                    </section>
+                </div>
+
+                <div class="part-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

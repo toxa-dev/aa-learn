@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select,
+button {
+    padding: 5px 5px;
+    font-family: inherit;
+    /* Inherit the font-family from the body */
+}
+
+select,
+input[type="date"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 130px;
+}
+
+.part-button button {
+    color: #fff;
+    background-color: blue;
+    padding: 10px 0;
+    width: 50%;
+    border: 0;
+    font-size: 1.1em;
+}
+
+form {
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    margin-left: 3em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+fieldset>div {
+    width: 100%;
+}
+
+.inputs-container {
+    width: 70%;
+    margin: 35px auto;
+}
+
+.inputs-container>* {
+    margin-bottom: 15px;
+}
+
+.part-firstName,
+.part-lastName,
+.part-email,
+.part-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-date,
+.languages,
+.part-comments,
+.signup-terms,
+.part-button {
+    margin: 35px 0;
+}
+
+input[type="checkbox"] {
+    margin: 0 0.4em 0 0;
+}
+
+.status-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-date>* {
+    width: 48%;
+}
+
+.status,
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.group-favLanguage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-terms {
+    display: flex;
+}
+
+.signup-terms>* {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.part-button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}

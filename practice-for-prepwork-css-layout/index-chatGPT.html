@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="layout-chatGPT.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Practice</title>
+</head>
+
+<body>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+            <div class="inputs-container">
+                <div class="part-firstName">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name" required>
+                </div>
+
+                <div class="part-lastName">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name" required>
+                </div>
+
+                <div class="part-email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address" required>
+                </div>
+
+                <div class="status-date">
+                    <div class="status">
+                        <label for="role">Status</label>
+                        <select id="role" name="user_role_name">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+
+                <div class="group-favLanguage">
+                    <p class="align-center">Choose your favorite Web language:</p>
+                    <section>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </section>
+                </div>
+
+                <div class="part-comments">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div class="signup-terms">
+                    <section>
+                        <input type="checkbox" id="signup" name="signup" value="Signup">
+                        <label for="signup">Sign up for newsletter</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="terms" name="terms" value="Terms">
+                        <label for="terms"> Agree to terms and conditions</label>
+                    </section>
+                </div>
+
+                <div class="part-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
