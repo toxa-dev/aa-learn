@@ -1,0 +1,205 @@
+html {
+    box-sizing: border-box;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    ;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header {
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.header-top__logo {
+    color: red;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.header-top__logo:hover {
+    text-decoration: underline;
+}
+
+.header-top__signIn {
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #000089;
+    color: #fff;
+}
+
+.header-top__signIn:hover {
+    background-color: #0000b9;
+}
+
+.header-bottom nav {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.header-bottom ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.header-bottom li {
+    flex-basis: 0%;
+    flex-grow: 1;
+}
+
+.header-bottom a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    color: #9C27B0;
+}
+
+
+.header-bottom a:hover {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.intro {
+    margin-bottom: 2em;
+}
+
+.container__author-socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__author-socials a {
+    color: black;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.author-socials__share:hover {
+    color: rgb(82, 34, 255);
+}
+
+.hero__image {
+    text-align: center;
+}
+
+.hero__text {
+    margin-top: 2em;
+}
+
+.thoughts {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 3em 0;
+}
+
+.thoughts p {
+    font-weight: bold;
+}
+
+.thoughts ul {
+    margin-left: 15px;
+}
+
+.thoughts li {
+    margin: 12px 5px;
+}
+
+.thoughts li::before {
+    content: "-";
+    margin-right: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    height: 130px;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo__link {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.footer__logo__link__text {
+    padding-left: 10px;
+}
+
+footer a {
+    color: #d5d5d5;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #d5d5d5;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer__logo img {
+    width: 50px;
+}
+
+.footer__links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
+.footer__links a {
+    display: inline-block;
+    padding: 10px 15px;
+}
