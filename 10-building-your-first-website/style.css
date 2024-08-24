@@ -1,0 +1,341 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /*
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+    */
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.site {}
+
+.site-header {
+    padding: 0 3em;
+    background-color: #e30613;
+}
+
+.main-menu {}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu:hover a {
+    opacity: 0.6;
+}
+
+.main-menu ul>* {
+    flex-grow: 1;
+}
+
+.main-menu a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1.2em 0;
+    font-family: Northbank Forward, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 7px solid #e30613;
+    border-bottom: 7px solid #e30613;
+}
+
+.main-menu a:hover {
+    border-bottom: 7px solid #fff;
+    opacity: 1;
+}
+
+main {}
+
+.gallery-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+.gallery-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: 10px;
+    /* Set a small unit for row height */
+    gap: 1em;
+    /* Gap between items */
+    background-color: #fff;
+}
+
+.gallery-gallery>* {
+    background-color: darkgreen;
+    grid-row-end: span 30;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    /* Subtle shadow for the background */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.gallery-item__img {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+
+.gallery-item__desk {
+    line-height: 1.3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 0.3em;
+    background-color: rgb(0, 122, 255, 85%);
+    /* Slightly opaque background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    /* Subtle shadow for the background */
+    color: #fff;
+    font-family: 'Georgia', serif;
+}
+
+.gallery-item__desk p {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    /* More pronounced shadow on text */
+    text-transform: capitalize;
+    letter-spacing: 1.1px;
+}
+
+.gallery-item__desk a {
+    color: #fff;
+    text-shadow: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Northbank Forward, sans-serif;
+}
+
+.show-full-image {
+    width: auto;
+    height: auto;
+}
+
+.gallery-item__desk__refer {
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
+.gallery-gallery>*:nth-child(2) {
+    grid-row-end: span 20;
+}
+
+.gallery-gallery>*:nth-child(3) {
+    grid-row-end: span 20;
+}
+
+.gallery-gallery>*:nth-child(4) {}
+
+.gallery-gallery>*:last-child {
+    grid-row-end: span 20;
+}
+
+.gallery-gallery>*:nth-last-child(2) {
+    grid-row-end: span 20;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image maintains its aspect ratio */
+    /* Adjust based on the desired height */
+}
+
+
+
+/* index.html */
+
+
+.main img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 0 20px;
+    max-width: 1470px;
+    margin: 3em auto;
+}
+
+.intro__news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.intro__news__item {
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 330px;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.intro__news__item h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    line-height: .88;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.intro__news__item p {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.intro__news__item__desk {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 16px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__news__item__desk p:first-of-type {
+    margin-top: 8px;
+}
+
+.intro__news__item__desk p:last-of-type {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.next-match {
+    background-color: #fff;
+}
+
+.next-match p,
+.next-match a {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.next-match-info p:first-child {
+    font-weight: bold;
+}
+
+.next-match-info p:last-child {
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.next-match-info div:last-child {
+    text-align: right;
+}
+
+.fixture-match,
+.container-next-match-info,
+.container-watch-options {
+    border-bottom: 3px solid #f2f2f2;
+    padding: 25px 16px;
+}
+
+
+.fixture-match__versus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixture-match__versus p {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.fixture-match__team figure {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-watch-options {
+    border: none;
+}
+
+.next-match-info,
+.fixture-match {
+    display: flex;
+}
+
+.next-match-info>*,
+.fixture-match>* {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.watch-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.fixture-match img {
+    width: 60px;
+}
+
+
+.watch-options a {
+    background-color: #e30613;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 13px 20px;
+    text-align: center;
+    margin: 0.3em 0;
+    font-weight: bold;
+}
